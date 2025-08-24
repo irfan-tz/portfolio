@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="The portfolio of Mohd Irfan Raza, a Computer Science student specializing in security, scalable systems, and cloud infrastructure.">
+    <title>Mohd Irfan Raza - Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <canvas class="neon-canvas" id="neonCanvas"></canvas>
+        <div class="content">
+            <!-- Header -->
+            <div class="header">
+                <h1>
+                    Mohd Irfan Raza
+                    <div class="social-links">
+                        <a href="https://github.com/irfan-tz" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohd-irfan-raza" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1JLjh4yx6D3tjdkgMk7iPr12pvkU_-gCf" target="_blank"
+                            aria-label="Resume">
+                            <i class="fas fa-file-alt"></i>
+                        </a>
+                    </div>
+                </h1>
+                <div class="description">
+                    <div style="font-size: clamp(10px, 1.7vw, 18px); color: rgb(203, 231, 255);">
+                        🖥️ Tech-tinkerer from a young age, always experimenting with new things and fixing broken things 🔧
+                    </div>
+                    Currently a <strong>Computer Science undergrad</strong> specializing in <strong>security</strong>, <strong>scalable systems</strong>, and <strong>cloud</strong> infrastructure.
+                    <br/>Experienced in building secure web platforms, network solutions, and high-performance applications.
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="section">
+                <h2> 💼 Work Experience</h2>
+
+                <div class="experience-item">
+                    <div class="experience-title">🔐 Research Intern - Side Channel Attacks</div>
+                    <div class="experience-company">Network Security Lab, IIIT-D</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>
+                                Created a data collection pipeline using Gradio, simultaneously 
+                                <strong>collecting 'system call' data</strong> from up to 
+                                <strong>16 phones</strong> via <strong>automated ADB app interactions</strong> storing in 
+                                <strong>MongoDB</strong> and <strong>WanDB</strong> for redundancy, then built another Gradio interface for 
+                                <strong>efficient selective model training/testing</strong>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item has-images">
+                    <div class="experience-title">⚡ Software Development Extern<span class="accordion-icon">+</span></div>
+                    <div class="experience-company">Online Judge Platform - AlgoUniversity (Y-Combinator backed)</div>
+                    <div class="experience-description">
+                        <ul>
+                            <li>
+                                Deployed a scalable Online Judge platform on
+                                <strong>AWS EC2 + Vercel using Django, GraphQL, and React</strong>
+                                for concurrent testing of
+                                <strong>10,000 users</strong>
+                                with a <strong>secure sandboxed custom Online Compiler Docker</strong>
+                                and integrated <strong>Google OAuth + Django's Auth</strong> for secure access.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="B-a.png" alt="Online Judge Platform Image 1" class="gallery-image"
+                            onclick="openLightbox(this)" data-gallery="online-judge" data-index="0">
+                        <img src="B-b.png" alt="Online Judge Platform Image 2" class="gallery-image"
+                            onclick="openLightbox(this)" data-gallery="online-judge" data-index="1">
+                    </div>
+                    <div class="project-links">
+                        <a href="https://thesisyphus.irfantz.me" target="_blank" class="live-link">
+                            🌐Live Link
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="section">
+                <h2> 💻 Things I've Built</h2>
+
+                <div class="project-item has-images">
+                    <div class="project-title">🔒 Secure Reverse Proxy for HTTPS File Server<span class="accordion-icon">+</span></div>
+                    <div class="project-description">
+                        <ul>
+                            <li>
+                                Built a <strong>secure reverse proxy server</strong> for an <strong>HTTPS file server</strong> using 
+                                <strong>TLS 1.2/1.3 (OpenSSL)</strong>, with <strong>PAM-based authentication</strong>, 
+                                <strong>certificate pinning</strong>, and <strong>sanitized GET/PUT file transfer protocols</strong>.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="1-a.png" alt="Secure Reverse Proxy Project Thumbnail" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="project-item has-images">
+                    <div class="project-title">🌐 Social Media Website<span class="accordion-icon">+</span></div>
+                    <div class="project-description">
+                        <ul>
+                            <li>
+                                Developed a <strong>secure social media platform</strong> using <strong>Django+DRF, ReactJS, PostgreSQL</strong>, with 
+                                <strong>2-factor authentication</strong>, <strong>hashed+salted passwords</strong>, 
+                                <strong>RSA-encrypted real-time chat (Redis)</strong>, and <strong>Dockerized deployment with Nginx</strong>.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="2-a.png" alt="Social Media Project Image 1" class="gallery-image"
+                            onclick="openLightbox(this)" data-gallery="social-media" data-index="0">
+                        <img src="2-b.png" alt="Social Media Project Image 2" class="gallery-image"
+                            onclick="openLightbox(this)" data-gallery="social-media" data-index="1">
+                        <img src="2-c.png" alt="Social Media Project Image 3" class="gallery-image"
+                            onclick="openLightbox(this)" data-gallery="social-media" data-index="2">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title">🏢 Enterprise Network Architecture</div>
+                    <div class="project-description">
+                        Designed and implemented a <strong>secure enterprise-level network architecture</strong> with
+                        <strong>UNIX ACLs, VPN</strong>, and <strong>Kubernetes-managed containers</strong> for a <strong>bug bounty</strong> challenge.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="section">
+                <h2> ⚙️ Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <h4>Proficient</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">🐍 Python</span>
+                            <span class="skill-tag">⚡ C++</span>
+                            <span class="skill-tag">🌐 JavaScript</span>
+                        </div>
+                        <h4 style="margin-top: 1.5rem;">Familiar</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">☕ Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <div class="skill-tags logo-tags">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React" class="skill-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                                alt="Django" class="skill-logo">
+                            <span class="skill-tag">REST API ⚙️</span>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+                                alt="GraphQL" class="skill-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
+                                alt="Nginx" class="skill-logo">
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <div class="skill-tags logo-tags">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL" class="skill-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL" class="skill-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB" class="skill-logo">
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Cloud</h3>
+                        <div class="skill-tags logo-tags">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                                alt="AWS ECS" class="skill-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                alt="Docker" class="skill-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/virtualbox/virtualbox-original.svg"
+                                alt="VirtualBox" class="skill-logo">
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Libraries & Frameworks</h3>
+                        <div class="skill-tags logo-tags">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                                alt="Pandas" class="skill-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                                alt="NumPy" class="skill-logo">
+                            <span class="skill-tag">📊 WanDB</span>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                                alt="OpenCV" class="skill-logo">
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-tags logo-tags">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                                class="skill-logo">
+                            <span class="skill-tag">🔍 Wireshark</span>
+                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"
+                                class="skill-logo">
+                            <span class="skill-tag">📱 ADB</span>
+                            <span class="skill-tag">🔑 OpenSSL</span>
+                            <span class="skill-tag">🖥️ Gradio</span>
+                            <span class="skill-tag">⚙️ CUDA</span>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                alt="Figma" class="skill-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education (Portfolio Style) -->
+            <div class="section">
+                <h2> 🎓 Education</h2>
+                <div class="education-item">
+                    <div class="experience-title">B.Tech, Computer Science and Engineering</div>
+                    <div class="experience-company">Indraprastha Institute of Information Technology (IIIT-D)</div>
+                    <div class="experience-date">Nov 2022 - May 2026</div>
+                </div>
+            </div>
+
+            <!-- Achievements (Portfolio Style) -->
+            <div class="section">
+                <h2>🏆 Achievements</h2>
+                <div class="achievement-item">
+                    <div class="experience-title">🚀 Accelerator Programming Camp - Batch of 2025</div>
+                    <div class="experience-company">AlgoUniversity (Y-Combinator backed)</div>
+                    <div class="experience-date">Jan 2025 - Present</div>
+                    <div class="experience-description">
+                        Achieved <strong>top 1.4%</strong> in Accelerator Programming Camp (40,000 applicants), mentored by engineers
+                        from Apple, Google, and Grab.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Lightbox -->
+    <div id="myLightbox" class="lightbox">
+        <span class="close-lightbox cursor" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImg">
+        </div>
+        <a class="prev-lightbox" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next-lightbox" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
