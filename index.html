@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                     </div>
                 </h1>
                 <div class="description">
-                    <div style="font-size: clamp(14px, 1.7vw, 20px); color: rgb(203, 231, 255); font-weight: 700;">
+                    <div style="font-size: clamp(10px, 1.7vw, 18px); color: rgb(203, 231, 255);">
                         🖥️ Tech-tinkerer from a young age, always experimenting with new things and fixing broken things 🔧
                     </div>
                     Currently a <strong>Computer Science undergrad</strong> specializing in <strong>security</strong>, <strong>scalable systems</strong>, and <strong>cloud</strong> infrastructure.
@@ -66,7 +66,13 @@
                 </div>
 
                 <div class="experience-item has-images">
-                    <div class="experience-title">⚡ Software Development Extern<span class="accordion-icon">+</span></div>
+                    <div class="experience-title">
+                        <span>⚡ Software Development Extern</span>
+                        <span>
+                            <a href="https://github.com/irfan-tz/online-judge-platform" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <span class="accordion-icon">+</span>
+                        </span>
+                    </div>
                     <div class="experience-company">Online Judge Platform - AlgoUniversity (Y-Combinator backed)</div>
                     <div class="experience-description">
                         <ul>
@@ -81,9 +87,9 @@
                         </ul>
                     </div>
                     <div class="project-image-container">
-                        <img src="B-a.png" alt="Online Judge Platform Image 1" class="gallery-image"
+                        <img src="assets/images/online_judge_1.png" alt="Online Judge Platform Image 1" class="gallery-image"
                             onclick="openLightbox(this)" data-gallery="online-judge" data-index="0">
-                        <img src="B-b.png" alt="Online Judge Platform Image 2" class="gallery-image"
+                        <img src="assets/images/online_judge_2.png" alt="Online Judge Platform Image 2" class="gallery-image"
                             onclick="openLightbox(this)" data-gallery="online-judge" data-index="1">
                     </div>
                     <div class="project-links">
@@ -99,7 +105,13 @@
                 <h2> 💻 Things I've Built</h2>
 
                 <div class="project-item has-images">
-                    <div class="project-title">🔒 Secure Reverse Proxy for HTTPS File Server<span class="accordion-icon">+</span></div>
+                    <div class="project-title">
+                        <span>🔒 Secure Reverse Proxy for HTTPS File Server</span>
+                        <span>
+                            <a href="https://github.com/irfan-tz/Secure-Reverse-Proxy-HTTPS-File-Server" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <span class="accordion-icon">+</span>
+                        </span>
+                    </div>
                     <div class="project-description">
                         <ul>
                             <li>
@@ -110,12 +122,18 @@
                         </ul>
                     </div>
                     <div class="project-image-container">
-                        <img src="1-a.png" alt="Secure Reverse Proxy Project Thumbnail" onclick="openLightbox(this)">
+                        <img src="assets/images/secure_proxy_1.png" alt="Secure Reverse Proxy Project Thumbnail" onclick="openLightbox(this)">
                     </div>
                 </div>
 
                 <div class="project-item has-images">
-                    <div class="project-title">🌐 Social Media Website<span class="accordion-icon">+</span></div>
+                    <div class="project-title">
+                        <span>🌐 Social Media Website</span>
+                        <span>
+                            <a href="https://github.com/irfan-tz/Social-Media-Marketplace" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <span class="accordion-icon">+</span>
+                        </span>
+                    </div>
                     <div class="project-description">
                         <ul>
                             <li>
@@ -126,11 +144,11 @@
                         </ul>
                     </div>
                     <div class="project-image-container">
-                        <img src="2-a.png" alt="Social Media Project Image 1" class="gallery-image"
+                        <img src="assets/images/social_media_1.png" alt="Social Media Project Image 1" class="gallery-image"
                             onclick="openLightbox(this)" data-gallery="social-media" data-index="0">
-                        <img src="2-b.png" alt="Social Media Project Image 2" class="gallery-image"
+                        <img src="assets/images/social_media_2.png" alt="Social Media Project Image 2" class="gallery-image"
                             onclick="openLightbox(this)" data-gallery="social-media" data-index="1">
-                        <img src="2-c.png" alt="Social Media Project Image 3" class="gallery-image"
+                        <img src="assets/images/social_media_3.png" alt="Social Media Project Image 3" class="gallery-image"
                             onclick="openLightbox(this)" data-gallery="social-media" data-index="2">
                     </div>
                 </div>
@@ -140,6 +158,59 @@
                     <div class="project-description">
                         Designed and implemented a <strong>secure enterprise-level network architecture</strong> with
                         <strong>UNIX ACLs, VPN</strong>, and <strong>Kubernetes-managed containers</strong> for a <strong>bug bounty</strong> challenge.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects -->
+            <div class="section">
+                <h2><i class="fas fa-code-branch"></i> Other Projects</h2>
+
+                <div class="project-item has-images">
+                    <div class="project-title">
+                        <span>🎮 Replica of StickHero using JavaFX</span>
+                        <span>
+                            <a href="https://github.com/irfan-tz/StickHero" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <span class="accordion-icon">+</span>
+                        </span>
+                    </div>
+                    <div class="project-description">
+                        <p>A replica of game Stick Hero using <strong>JavaFX</strong> implementing different concepts of <strong>OOPS</strong>, error-checking and testing using <strong>JUnitTest</strong>.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="assets/images/stick_hero_1.png" alt="StickHero Replica Screenshot" class="gallery-image" data-gallery="stickhero" data-index="0" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="project-item has-images">
+                    <div class="project-title">
+                        <span>🖥️ 64-bitOS</span>
+                        <span>
+                            <a href="https://github.com/irfan-tz/64-bitOS" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <span class="accordion-icon">+</span>
+                        </span>
+                    </div>
+                    <div class="project-description">
+                        <p>A <strong>bare-metal x86-64 kernel</strong> featuring <strong>multiboot compliance</strong>, <strong>long mode activation</strong>, and <strong>paging setup</strong>. It does basic VGA text mode characters printing with C.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="assets/images/os_kernel_1.png" alt="64-bitOS Screenshot" class="gallery-image" data-gallery="os" data-index="0" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="project-item has-images">
+                    <div class="project-title">
+                        <span>🖨️ Print Server: Needham-Schroeder</span>
+                        <span>
+                            <a href="https://github.com/irfan-tz/Needham-Schroder-based-text-to-PDF-server" class="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <span class="accordion-icon">+</span>
+                        </span>
+                    </div>
+                    <div class="project-description">
+                        <p><strong>KDC implementation</strong>, multi-threaded <strong>Print Server</strong> and client in C using <strong>PBKDF2</strong>. Client authenticates to Print Server using <strong>ticket</strong> and sends a file (text or image) that Print Server converts to PDF and returns an <strong>encrypted PDF</strong>.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="assets/images/print_server_1.png" alt="Print Server Project Screenshot" class="gallery-image" data-gallery="print-server" data-index="0" onclick="openLightbox(this)">
                     </div>
                 </div>
             </div>
@@ -265,6 +336,6 @@
         <a class="next-lightbox" onclick="changeSlide(1)">&#10095;</a>
     </div>
 
-    <script src="script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
